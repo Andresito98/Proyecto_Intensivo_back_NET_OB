@@ -38,5 +38,22 @@
    Son funciones de busqueda mucho mas avanzadas que nos sirven para implementarlas en los controladores para que no solo sean los tipicos get por id o cosas asi.
    Por que al fin y al cabo son consultas a nuesta base de datos.
 
-   ##### Ejercicio 3 #####
 
+    * ---------------_- Sesion 4 -_---------------
+
+    Hemos realizado otra sereie de consultas parecidas a la sesion 3 pero esta vez con relaciones, esto sirve para que podamos hacer mas peticiones http  en los controladores
+    y ser mas especificos cuando queramos algun dato en concreto.
+
+    - Creamos la carpeta Services en el proyecto principal y creamos primero el "IStudentService" y creamos los metodos que queramos y luego el archivo "StudentsService"
+    para poder representarlos.
+
+    - Despues tenemos que en program añadir el tema de los servicios "builder.Services.AddScoped<IStudentService, StudentsService>();"
+    - Creamos un controlador llamado "StudentsController".
+    - Y despues vamos a programs y añadimos los cors paso "5" y "6"
+
+    * ---------------_- Sesion 5 -_--------------- JWT
+
+    Instalamos los paquetes correspondientes:
+        --> "Microsoft.AspNetCore.Authentication.JwtBearer"
+        --> "Microsoft.IdentityModel.JsonWebTokens"
+        --> "System.IdentityModel.Tokens.Jwt"
